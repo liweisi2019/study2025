@@ -33,6 +33,8 @@ array=[1,3,5,6,7,8]
 for i in array:
     print(i)
 
+for i in range(1,10)
+    print(i)
 ##框选对齐的语句后  
 ctrl+[  左tab 
 ctrl+]  右tab
