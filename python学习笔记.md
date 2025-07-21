@@ -94,7 +94,7 @@ print(a)        ##None
 linux pip 
 windows 百度
 
-## 读写
+## 读写 与  接收
 ```python
 ##写入模式
 text="this is a text\nthis is the second line"
@@ -115,13 +115,28 @@ firstline=file.readline()    ##第一次读取第一行
 secondline=file.readline()   ##第二次读取第二行 
 thirdlin=file.readline()    ##第三次读取第三行
 print(firstline,secondline,thirdline)
+
+##接收
+a_input=input('please give me a number\n')  ##接收到string类型数据
+##a_input=int(input('please give me a number\n'))   int 数据
+
+if a_input=='1':
+    print('u choose one')
+elif a_input =='2':
+    print('u choose two')
+else :
+    print('u choose other')
+
+
 ```
 
 ## 类
 ```python
 class Calculator:
-    price = 18
-    name = 'Good Calculator'
+
+    def __init__(self,name,price=20):    ##类似于构造函数  需要引入参数时使用 无参数无法构建类  可以使用默认参数
+        self.name=name
+        self.price=price
     def sum(self,x,y):
         print(self.name)  ##self指向自身
         print(x+y)
@@ -132,6 +147,29 @@ calculator=Calculator()    ##创建对象
 self.price
 self.name
 
+```
+## 元组 和 列表
+```python
+a_arr1=(1,3,5,7,9)
+a_arr2=2,4,6,8,10
+
+#遍历
+for i in a_arr1 :
+    print(i)
+
+for index in range(len(a_arr2)) :  ##index为索引
+    print(a_arr2[index])
+
+##列表list
+a=[1,2,4,5,6,7]
+a.appended(8)   #在末尾添加8
+a.insert(3,4)  #在索引值为3的地方添加4
+a.remove(4)    #删除第一个4
+print(a[-1])   #最后一位 
+print(a[3:4])  #打印索引值为3 4的值
+a.index(3)   #第一个3的索引
+a.count(3)  #出现3的次数
+a.sort()    #默认从小到大 参数为reverse=True时 从大到小
 ```
 
 
