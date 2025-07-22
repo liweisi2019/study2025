@@ -45,7 +45,7 @@ for i in range(1,10,2) ##1-9步长为2
 
 ```
 ##框选对齐的语句后  
-ctrl+[  左tab 
+ctrl+[  左tab  
 ctrl+]  右tab
 
 ### if elif else 
@@ -78,7 +78,7 @@ book(200)
 ```
 ### 全局变量和局部变量
 
-局部变量 local  仅作用于函数内部
+局部变量 local  仅作用于函数内部  
 全局变量 global
 ```python
  a=None
@@ -91,8 +91,8 @@ print(a)        ##None
 ```
 
 ##python库的安装
-linux pip 
-windows 百度
+linux pip  
+windows 百度 
 
 ## 读写 与  接收
 ```python
