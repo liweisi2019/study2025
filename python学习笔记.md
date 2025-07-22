@@ -148,7 +148,7 @@ self.price
 self.name
 
 ```
-## 元组 和 列表
+## 元组 和 列表[]
 ```python
 a_arr1=(1,3,5,7,9)
 a_arr2=2,4,6,8,10
@@ -172,5 +172,38 @@ a.count(3)  #出现3的次数
 a.sort()    #默认从小到大 参数为reverse=True时 从大到小
 ```
 
+## 二维数组
+
+```python
+a_multarr=[ [1,2,3],
+            [4,5,6],
+            [7,8,9] ]
+
+for i in a_multarr:
+    print(i)
+
+```
+
+## 字典(无顺序){}
+字典的内容可以是数组、字典、或函数\n
+a_list
+
+```python
+a_list=[1,2,3,4,5]
+
+d1={'apple':1,'pear':2,'orange':3}
+d2={1:'a',2:'b'}
+print(d1['apple']) #1 
+
+print(d2[1])     # a
+
+del d1['orange']   #删除元素
+
+print(d1)  #{'apple': 1, 'pear': 2}
+
+d1['qwer']=50  #增加元素队
+
+print(d1)  #{'apple': 1, 'pear': 2, 'qwer': 50}
 
 
+```
